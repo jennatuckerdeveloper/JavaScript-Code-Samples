@@ -1,0 +1,15 @@
+{
+	"name": "js-code",
+	"version": "1.0.0",
+	"description": "",
+	"main": "example.js",
+	"scripts": {
+		"test": "mocha --reporter spec --watch"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"chai": "^4.3.6",
+		"mocha": "^9.2.2"
+	}
+}
