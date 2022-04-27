@@ -1,5 +1,5 @@
 const chai = require('chai')
-const { digitize } = require('./digitize')
+const { digitize } = require('../digitize')
 const assert = chai.assert
 chai.config.truncateThreshold = 0
 
