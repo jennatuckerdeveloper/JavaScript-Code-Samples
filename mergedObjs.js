@@ -25,6 +25,7 @@ var objConcat=(o)=> {
 };
 */
 
+// First solution 
 // const objConcat = (arrObjs) => {
 // 	let res = {}
 // 	arrObjs.forEach((obj) => {
@@ -35,7 +36,9 @@ var objConcat=(o)=> {
 // 	return res
 // }
 
+// Shallow copy 
 const objConcat = (objs) => {
+	// Spread operator for array to unpack objects.
 	return Object.assign({}, ...objs)
 }
 
