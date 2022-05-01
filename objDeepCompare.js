@@ -48,3 +48,5 @@ console.log(
 		true
 )
 console.log(deepCompare(null, null) === true)
+
+module.exports = deepCompare
