@@ -30,16 +30,14 @@ result = "a#cd#"
 
 const assembleString = (corrupted) => {
 	if (corrupted.length === 0) return ''
-	const toReduce = corrupted.map((data) => data.split(''))
-	return toReduce[0]
-		.reduce((res, _, ind) => {
-			let charsToCompare = corrupted.map((data) => data[ind])
-			const anyReadable = charsToCompare.every((c) => c === '*')
-			const result = anyReadable ? '#' : charsToCompare.find((c) => c !== '*')
-			res.push(result)
-			return res
-		}, [])
-		.join('')
+	let finalString = ''
+	for (let i in corrupted[0]) {
+		let charsToCompare = corrupted.map((data) => data[i])
+		const anyReadable = charsToCompare.every((c) => c === '*')
+		const charOrHash = anyReadable ? '#' : charsToCompare.find((c) => c !== '*')
+		finalString = finalString.concat(charOrHash)
+	}
+	return finalString
 }
 
 module.exports = { assembleString }
