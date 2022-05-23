@@ -2,11 +2,6 @@ const userData = require('../exampleData/user-data.json')
 
 // console.log(userData)
 
-// List of names in alphabetical
-// List of names in alpha with user ids
-// companies represented (only one time)
-// company info (catchphrase and bs by search term)
-
 const userNames = (allUserData) => {
 	return allUserData.map((user) => user.name)
 }
