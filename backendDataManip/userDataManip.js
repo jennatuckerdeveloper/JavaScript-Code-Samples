@@ -1,4 +1,4 @@
-const userData = require('./user-data.json')
+const userData = require('../exampleData/user-data.json')
 
 // console.log(userData)
 
@@ -55,4 +55,4 @@ const companySearch = (allUserData, term) => {
 	}, {})
 }
 
-console.log(companySearch(userData, 'applications'))
+// console.log(companySearch(userData, 'applications'))
